@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text: #0000008c;
+    --color-white: #fff;
+}
+
+body {
+    color: var(--color-text);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.limited-width {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.links-topo {
+    margin-left: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.links-topo a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.links-topo a:hover {
+    color: rgb(106, 106, 106);
+}
+
+header {
+    background-color: rgb(69, 224, 224);
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-fundo {
+    background-image: url("../assets/assets/recepcao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+.clinica-name h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+
+    color: var(--color-white);
+}
+
+.clinica-name {
+    margin: auto;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section {
+    margin: 50px auto;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+.container p,
+.lista li {
+    line-height: 30px;
+}
+
+.container h2, .lista h3 {
+    margin-bottom: 10px;
+}
+
+.lista h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.lista {
+    margin-top: 16px;
+}
+
+.galery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+    margin: 45px 0;
+}
+
+.galery .img-galery img {
+    width: 300px;
+}
+
+.img-galery a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.img-galery {
+    box-shadow: 1px 1px 10px black;
+
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.img-galery a p {
+    margin: 20px 108px;
+    color: var(--color-text);
+    font-size: 17px;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: rgb(69, 224, 224);
+    color: var(--color-white);
+
+    padding: 20px 20px;
+
+    font-weight: 600;
+} 
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    font-weight: 600;
+}
+
+footer {
+    background-color: rgb(51, 160, 160);
+    color: var(--color-white);
+
+    padding: 20px 0;
+}
+
+.footer-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 425px) {
+    .limited-width {
+        max-width: 425px;
+        margin: 0 auto;
+    }
+
+    .topo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topo a img {
+        width: 200px;
+    }
+
+    .topo .links-topo {
+        font-size: 16px;
+
+        border-top: 2px solid rgb(51, 160, 160);
+        padding: 15px;
+    }
+
+    .img-fundo {
+        height: 200px;
+    }
+
+    .info img {
+        display: none;
+    }
+
+    .galery {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .limited-width {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .info img {
+        display: none;
+    }
+
+    .galery {
+        flex-wrap: wrap;
+    }
+
+    .img-fundo {
+        height: 300px;
+    }
+}
